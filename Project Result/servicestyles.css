@@ -1,0 +1,130 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('background3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 14px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px 40px; /* Top padding accounts for fixed header */
+    color: #fff;
+    font-size: 14pt;
+    font-weight: 400;
+
+}
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Services Page Styles */
+.services-page {
+    color: #fff;
+}
+
+.services-page h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.services-page > p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 2rem;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    margin-bottom: 1rem;
+}
+
+.service-card .price {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #4CAF50;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin-top: 450px;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding-top: 80px;
+        
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-page h1 {
+        font-size: 2rem;
+    }
+
+    .services-page > p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="navstyles.css">
+
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Mvelo Architects</div>
+            <ul class="nav-links">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Portfolio.html" >Portfolio</a></li>
+                <li><a href="About.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   <main>
+    <script>
+        const cellsElement = document.querySelector('.cells');
+        const boxElement = document.querySelector('.box');
+    
+        cellsElement.addEventListener('mouseover', () => {
+            cellsElement.style.transform = 'scale(1.2)';
+    
+            boxElement.style.transform = 'rotateY(0deg)';
+            boxElement.style.opacity = '1';
+        });
+    
+        cellsElement.addEventListener('mouseout', () => {
+            cellsElement.style.transform = 'scale(1)';
+    
+            boxElement.style.transform = 'rotateY(90deg)';
+            boxElement.style.opacity = '0';});
+    
+       </script> 
+       
+       <section id="about" class="about">
+        <div class="container">
+            <h1>About Us</h1>
+            <p style="text-align: center; font-size: 14pt; color: #fff;">"Designing Sustainable Futures: Innovative Architecture by Mvelo Architects"</p>
+            <br>
+            <div class="Wrapper">
+                <h2>Welcome to Mvelo Architects!</h2>
+            </div>
+       </div>
+        </section>
+        
+       
+        
+        <div class="aboutWrapper">
+                <div class="cells fade-in2">
+                    <p>Founded in the heart of South Africa, our architecture firm is a testament to the power of innovation, creativity, and community. With roots deeply embedded in the diverse and vibrant South African landscape, we bring a unique perspective to every project, blending local heritage with cutting-edge design.
+                    Our team is a collective of passionate architects, designers, and visionaries dedicated to crafting spaces that not only meet functional needs but also inspire and uplift. We believe that architecture is more than just building; it’s about creating environments that resonate with the people who use them.
+                    From sustainable residential homes to dynamic commercial spaces, our approach is holistic, ensuring that each project is a harmonious blend of form, function, and sustainability. We are committed to pushing the boundaries of what’s possible, while always respecting the natural and cultural context of our surroundings.
+                    At the core of our philosophy is a deep respect for our clients’ vision. We work collaboratively, ensuring that every detail reflects their desires and exceeds their expectations. Whether it's a modern urban development or a serene rural retreat, our designs are tailored to enhance the experience of those who inhabit them.
+                    Join us as we shape the future of South African architecture, one thoughtful design at a time.</p>
+                </div>
+
+        </div>
+        
+   </main>
+   <footer class="footer">
+    <p>&copy; 2024 Mvelo Architects. All rights reserved.</p>
+</footer>
+
+    
+</body>
+</html>
